@@ -142,18 +142,18 @@ function draw() {
         let r = video.pixels[index];
         let dia = map(r, 0, 255, gridSize, 2);
 
-        fill("#FFFFFF");
+        fill("#FF7E00");
         stroke("#FCCE31");
         strokeWeight(0.5);
 
-        let fillColor = "#E11396";
+        let fillColor = "#FD0EA5";
 
         fill(fillColor);
         rect(x + r - 100, y + r / 10 + 2, (gridSize * 2) / 3, r / 3);
         fill("#7F0C98");
         rect(x, y + gridSize + 10 + 5, r / 20, gridSize);
 
-        fill("#FF8F4D");
+        fill("#FFC900");
         circle(x + gridSize / 2, y + gridSize / 2, dia);
       }
     }
