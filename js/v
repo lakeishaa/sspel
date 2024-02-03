@@ -1,0 +1,111 @@
+// ... (Your existing code)
+
+function draw() {
+  background('#5e5e5e');
+
+  let val = radio.value();
+
+  if (val == ' CAMERA 1  ') {
+    background('#D9D9D9');
+    let gridSize = gridSizeSlider.value();
+
+    video.loadPixels();
+    for (let y = 0; y < video.height; y += gridSize) {
+      for (let x = 0; x < video.width; x += gridSize) {
+        let index = (y * video.width + x) * 4;
+        let r = video.pixels[index];
+        let dia = map(r, 0, 255, gridSize, 2);
+
+        stroke('#e2b61f');
+        strokeWeight(0.5);
+
+        let fillColor = ('#df1691');
+
+        fill(fillColor);
+        rect(x, y + r / 10 + 2, gridSize * 2 / 3, r / 3);
+
+        fill('#1e59f6');
+        rect(x, y + gridSize + 10 + 5, r / 20, gridSize);
+
+        fill('#FFD030');
+        circle(x + r / 2, y + r / 2, dia);
+      }
+    }
+
+    if (invertCheckbox.checked()) {
+      filter(INVERT);
+    }
+  } else if (val == ' CAMERA 2  ') {
+    let gridSize = gridSizeSlider.value();
+    background('#D9D9D9');
+
+    video.loadPixels();
+    for (let y = 0; y < video.height; y += gridSize) {
+      for (let x = 0; x < video.width; x += gridSize) {
+        let index = (y * video.width + x) * 4;
+        let r = video.pixels[index];
+        let dia = map(r, 0, 255, gridSize, 2);
+
+        stroke('#1D86E0');
+        strokeWeight(0.5);
+
+        let fillColor = ('#5CD700');
+
+        fill(fillColor);
+        rect(x, y + r / 10 + 2, gridSize * 2 / 3, r / 3);
+
+        fill('#F17502');
+        rect(x, y + gridSize + 10 + 5, r / 20, gridSize);
+
+        fill('#0C43F9');
+        circle(x + r / 2, y + r / 2, dia);
+      }
+    }
+
+    if (invertCheckbox.checked()) {
+      filter(INVERT);
+    }
+  } else if (val == ' CAMERA 3  ') {
+    let gridSize = gridSizeSlider.value();
+    background('#D9D9D9');
+
+    video.loadPixels();
+    for (let y = 0; y < video.height; y += gridSize) {
+      for (let x = 0; x < video.width; x += gridSize) {
+        let index = (y * video.width + x) * 4;
+        let r = video.pixels[index];
+        let dia = map(r, 0, 255, gridSize, 2);
+
+        fill('#e87b3a');
+        stroke('#e2b61f');
+        strokeWeight(0.5);
+
+        let fillColor = ('#D51A90');
+
+        fill(fillColor);
+        rect(x + r - 100, y + r / 10 + 2, gridSize * 2 / 3, r / 3);
+        fill('#8808a5');
+        rect(x, y + gridSize + 10 + 5, r / 20, gridSize);
+
+        fill('#e87b3a');
+        circle(x + gridSize / 2, y + gridSize / 2, dia);
+      }
+    }
+
+    if (invertCheckbox.checked()) {
+      filter(INVERT);
+    }
+  }
+
+  let s = "HIGHER GROOVE BY SSPEL";
+  fill('#343434');
+  textSize(50);
+  textAlign(CENTER, CENTER);
+
+  // Center the text horizontally and vertically
+  text(s, width / 2, height / 2);
+
+  // Rest of your draw function code...
+}
+
+// ... (Your existing code)
