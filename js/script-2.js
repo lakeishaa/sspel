@@ -1,8 +1,8 @@
 let tickerText =
-  "HIGHER GROOVE   *   HIGHER GROOVE   *   HIGHER GROOVE   *   HIGHER GROOVE   *   HIGHER GROOVE";
+  "HIGHER GROOVE   ✶   HIGHER GROOVE   ✶   HIGHER GROOVE   ✶   HIGHER GROOVE   ✶   HIGHER GROOVE   ✶   HIGHER GROOVE   ✶   HIGHER GROOVE   ✶   HIGHER GROOVE";
 let tickerText2 =
-  "SOUNDS BY SPELL   *   SOUNDS BY SPELL   *   SOUNDS BY SPELL   *   SOUNDS BY SPELL*   SOUNDS BY SPELL";
-let tickerSpeed = 20;
+  "SOUNDS BY SPELL   ✶   SOUNDS BY SPELL   ✶   SOUNDS BY SPELL   ✶   SOUNDS BY SPELL   ✶   SOUNDS BY SPELL   ✶   SOUNDS BY SPELL   ✶   SOUNDS BY SPELL";
+let tickerSpeed = 15;
 let tickerX1 = 0;
 let tickerX2 = 0;
 let maxVerticalPlacement;
@@ -123,7 +123,7 @@ function draw() {
         fill(fillColor);
         rect(x, y + r / 10 + 2, (gridSize * 2) / 3), r / 3;
 
-        fill("#0066FF");
+        fill("#1e59f6");
 
         rect(x, y + gridSize + 10 + 5, r / 20, gridSize);
 
