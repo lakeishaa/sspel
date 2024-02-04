@@ -1,7 +1,7 @@
 let tickerText =
   "HIGHER GROOVE   ✶   HIGHER GROOVE   ✶   HIGHER GROOVE   ✶   HIGHER GROOVE   ✶   HIGHER GROOVE   ✶   HIGHER GROOVE   ✶   HIGHER GROOVE";
 let tickerText2 =
-  "SOUNDS BY SPELL   ✶   SOUNDS BY SPELL   ✶   SOUNDS BY SPELL   ✶   SOUNDS BY SPELL   ✶   SOUNDS BY SPELL   ✶   SOUNDS BY SPELL   ";
+  "SOUNDS BY SSPELL   ✶   SOUNDS BY SSPELL   ✶   SOUNDS BY SSPELL   ✶   SOUNDS BY SSPELL   ✶   SOUNDS BY SSPELL   ✶   SOUNDS BY SSPELL   ";
 let tickerSpeed = 15;
 let tickerX1 = 0;
 let tickerX2 = 0;
